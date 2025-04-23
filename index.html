@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universo Avatar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Página Inicial -->
+    <section id="home" class="full-screen background-video">
+        <video autoplay muted loop>
+            <source src="video.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos HTML5.
+        </video>
+        <div class="content">
+            <img src="capa-livro.png" alt="Capa do Livro Live Action">
+            <h1>Desperte seu Avatar. Viva sua missão.</h1>
+            <p>A sua vida é o palco. O seu personagem, a sua verdade. Viva o jogo mais importante: o da alma encarnada.</p>
+            <button onclick="scrollToSection('manifesto')">Comece agora</button>
+        </div>
+        <audio id="background-music" loop>
+            <source src="musica.mp3" type="audio/mp3">
+            Seu navegador não suporta áudio HTML5.
+        </audio>
+        <button class="music-toggle" onclick="toggleMusic()">Ativar Música</button>
+    </section>
+
+    <!-- Manifesto -->
+    <section id="manifesto">
+        <h2>Você é o personagem principal no jogo da vida.</h2>
+        <p>A Avatar nasce como um chamado. Um portal para a manifestação da sua melhor versão...</p>
+    </section>
+
+    <!-- O Livro -->
+    <section id="book">
+        <img src="capa-livro.png" alt="Capa do Livro Live Action">
+        <h2>O Livro Live Action</h2>
+        <p>Live Action é um livro-ritual...</p>
+        <blockquote>
+            “E se viver fosse um ato sagrado?...”
+        </blockquote>
+        <button>Quero viver meu personagem</button>
+    </section>
+
+    <!-- Universo Avatar -->
+    <section id="universe">
+        <h2>Universo Avatar</h2>
+        <div class="symbol-gallery">
+            <!-- adicione imagens temáticas -->
+        </div>
+        <div class="floating-words">
+            <span>Magia</span>
+            <span>Luz</span>
+            <span>Futuro</span>
+        </div>
+    </section>
+
+    <!-- Comunidade -->
+    <section id="community">
+        <h2>Entre para a comunidade dos Avatares</h2>
+        <form>
+            <input type="text" placeholder="Nome" required>
+            <input type="email" placeholder="E-mail" required>
+            <button type="submit">Quero fazer parte</button>
+        </form>
+    </section>
+
+    <footer>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="/livro">Livro</a>
+            <a href="#contact">Contato</a>
+        </nav>
+        <div class="social-links">
+            <!-- links de redes sociais -->
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
